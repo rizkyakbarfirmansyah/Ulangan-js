@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Kepribadian Berdasarkan Golongan Darah</title>
+</head>
+<body>
+
+    <script>
+        // Mengambil input golongan darah dari pengguna
+        var golonganDarah = prompt("Apa golongan darah kamu? (A, B, AB, O)").toUpperCase();
+
+        // Inisialisasi variabel untuk hasil kepribadian
+        var hasilKepribadian = "";
+
+        // Melakukan kondisional berdasarkan golongan darah yang dimasukkan
+        switch (golonganDarah) {
+            case "A":
+                hasilKepribadian = "Individu dengan golongan darah A cenderung memiliki sifat yang terorganisir, kritis, dan tenang dalam menghadapi masalah.";
+                break;
+            case "B":
+                hasilKepribadian = "Individu dengan golongan darah B memiliki semangat tinggi, aktif, kreatif, dan selalu ingin tahu.";
+                break;
+            case "AB":
+                hasilKepribadian = "Individu dengan golongan darah AB cenderung memiliki karakter yang kritis, rasional, bertanggung jawab, suka menolong, dan mudah beradaptasi.";
+                break;
+            case "O":
+                hasilKepribadian = "Individu dengan golongan darah O memiliki sikap yang mudah beradaptasi dengan lingkungan baru atau bersifat easy going.";
+                break;
+            default:
+                hasilKepribadian = "Golongan darah yang dimasukkan tidak valid atau tidak dikenali.";
+        }
+
+        // Menampilkan hasil kepribadian ke layar menggunakan alert
+        alert(hasilKepribadian);
+    </script>
+
+</body>
+</html>
